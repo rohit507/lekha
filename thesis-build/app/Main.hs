@@ -33,3 +33,9 @@ type SpanFunc = SpanID -> Params -> [Inline] -> Action (Format -> Action Inline)
 applyRules :: (Walkable Block a, Walkable Inline a)
            => ([DivRule], [SpanRule]) -> Format -> a -> Action a
 applyRules = undefined
+
+-- A general package of rules is just some rules monad we can insert
+-- with maybe a specific target. Really, the pandoc default files take care
+-- of a lot of this, and artifacts should take care of the rest.
+-- In the standard model this would be hella recursive, but as it stands, this
+-- is pretty good for now.
