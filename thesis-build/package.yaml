@@ -1,0 +1,32 @@
+name:                thesis-build
+version:             0.0.1.0
+#synopsis:
+#description:
+#homepage:            https://github.com/githubuser/#readme
+license:             BSD3
+author:              Rohit Ramesh
+maintainer:          rkr@berkeley.edu
+copyright:           2019 Rohit Ramesh
+#category:
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - intro
+  - pandoc
+  - twitch
+  - shake
+
+_shared-defaults: !include "../package-defaults.yaml"
+
+library:
+  source-dirs: src
+
+executables:
+  build:
+    main: Main.hs
+    source-dirs:
+      - app
+    dependencies:
+      - thesis-build

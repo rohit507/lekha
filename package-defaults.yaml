@@ -1,0 +1,87 @@
+
+- &defaults
+  default-extensions: &default-extensions
+    ApplicativeDo
+    BangPatterns
+    BlockArguments
+    ConstraintKinds
+    DataKinds
+    DefaultSignatures
+    DeriveAnyClass
+    DeriveDataTypeable
+    DeriveFoldable
+    DeriveFunctor
+    DeriveGeneric
+    DeriveLift
+    DeriveTraversable
+    DerivingStrategies
+    DuplicateRecordFields
+    EmptyCase
+    EmptyDataDecls
+    ExistentialQuantification
+    ExtendedDefaultRules
+    FlexibleContexts
+    FlexibleInstances
+    FunctionalDependencies
+    GADTs
+    GeneralizedNewtypeDeriving
+    InstanceSigs
+    KindSignatures
+    LambdaCase
+    LiberalTypeSynonyms
+    MultiParamTypeClasses
+    MultiWayIf
+    NamedFieldPuns
+    NamedWildCards
+    NoImplicitPrelude
+    NoMonomorphismRestriction
+    OverloadedLabels
+    OverloadedLists
+    OverloadedStrings
+    PackageImports
+    PartialTypeSignatures
+    PatternSynonyms
+    PolyKinds
+    QuasiQuotes
+    QuantifiedConstraints
+    RankNTypes
+    RecordWildCards
+    RecursiveDo
+    ScopedTypeVariables
+    StandaloneDeriving
+    TemplateHaskell
+    TupleSections
+    TypeApplications
+    TypeFamilies
+    TypeFamilyDependencies
+    TypeOperators
+    ViewPatterns
+
+  ghc-options: &ghc-options
+
+  # - -fplugin=Type.Compare.Plugin
+  - -Wall
+  - -Wcompat
+  - -Wsemigroup
+  #- -Wincomplete-record-updates
+  #- -Wincomplete-uni-patterns
+  #- -ddump-splices
+  - -Werror
+  # - -Wwarn=type-defaults
+  - -Wwarn=unticked-promoted-constructors
+  - -Wwarn=deprecations
+  - -Wwarn=name-shadowing
+  - -Wwarn=orphans
+  # - -Wwarn=redundant-constraints # TODO :: Re-enable for cleaning
+  - -Wwarn=typed-holes
+  # - -Wwarn=unused-imports        # TODO :: Re-enable for cleaning
+  # - -Wwarn=unused-local-binds    # TODO :: Re-enable for cleaning
+  - -Wwarn=unused-matches
+  # - -Wwarn=unused-top-binds      # TODO :: Re-enable for cleaning
+  - -fdefer-typed-holes
+  - -Wtyped-holes
+  - -fshow-hole-constraints
+  # - -fmax-valid-hole-fits=0
+  # - -fprint-typechecker-elaboration
+  # - -fno-defer-type-errors
+  - -fshow-warning-groups
