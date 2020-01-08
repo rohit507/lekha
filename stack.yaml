@@ -28,7 +28,8 @@ packages:
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
 extra-deps: # []
-  - twitch-0.1.7.2
+  - pier-core-0.3.0.0
+
   # Eff
   # - git: git@github.com:hasura/eff.git
     # commit: 61dfb24515b3d6f54f2ca148655bd7c6b7e8181c

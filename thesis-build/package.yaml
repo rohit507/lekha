@@ -15,7 +15,8 @@ dependencies:
   - base >= 4.7 && < 5
   - intro
   - pandoc
-  - twitch
+  - pier
+  - fsnotify
   - shake
 
 _shared-defaults: !include "../package-defaults.yaml"
