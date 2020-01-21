@@ -22,7 +22,7 @@ dependencies:
 _shared-defaults: !include "../package-defaults.yaml"
 
 library:
-  source-dirs: src
+  source-dirs: lib
 
 executables:
   build:
